@@ -12,7 +12,7 @@
 
 ## Testreszabási lehetőségek:
 
-`bug_report_webhook.txt` fájlban megadható egy webhook url, amire a bot majd a bug 
+`bug_tracker_webhook.txt` fájlban megadható egy webhook url, amire a bot majd a bug 
 report-okat discord embed formátumban küldi
 
 `swears.txt` autómatikusan létrehozott fájl, amiben vesszővel elválasztva a szűrendő 
