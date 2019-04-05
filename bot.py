@@ -44,7 +44,7 @@ try:
 			TOKEN = f.read()
 		except:
 			print(27*"=")
-			raise(" Can't access key.txt file")
+			print(" Can't access key.txt file")
 			print(27*"=")
 			exit()
 except:
@@ -111,7 +111,7 @@ async def on_message(message):
 		print("["+message.author.name+"] "+message.content)
 	moderate = False
 	for swear in swears:
-		if swear in message.content:
+		if swear in message.content.lower():
 			moderate = True
 			break
 	if moderate:# and message.content[:len(default_prefix)] != default_prefix:
